@@ -8,7 +8,7 @@ app.use("", BookRouter)
 
 app.listen('5000', ()=> console.log('server running on 5000'))
 
-mongoose.connect('mongodb://localhost:27017/bookstore')
+mongoose.connect('mongodb+srv://swethasundaram:sweths2005@mycluster.0dm5a.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster')
     .then(()=> console.log('database connected..'))
     .catch((err) => console.log(err))
 // app.get('/',(req,res)=>{
